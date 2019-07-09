@@ -34,6 +34,10 @@ public class ClassUtil {
         return cls;
     }
 
+    public static Class<?> loadClass(String className) {
+        return loadClass(className, false);
+    }
+
     /**
      * 获取指定包名下的所有类，根据包名转换为文件路径，读取class文件或jar包，获取指定类名去加载。
      */

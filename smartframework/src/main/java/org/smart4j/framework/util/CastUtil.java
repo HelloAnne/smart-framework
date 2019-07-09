@@ -18,6 +18,14 @@ public final class CastUtil {
         return defaultValue;
     }
 
+    public static long castLong(Object obj) {
+        return castLong(obj, 0l);
+    }
+
+    public static long castLong(Object obj, long defaultValue) {
+        return defaultValue;
+    }
+
     public static boolean castBoolean(Object obj) {
         return castBoolean(obj, false);
     }
